@@ -124,7 +124,7 @@ p {
 .loading__icon {
     animation: rotate .5s infinite linear;
     border: solid 3px #9aa0a6;
-    border-top-color: #49afd0;
+    border-top-color: transparent;
     border-radius: 50%;
     display: none;
     height: 30px;
