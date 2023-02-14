@@ -4,17 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
     <title>Book-Finder</title>
 </head>
-<body>
-    
-    <h1>Book-Finder</h1>
-    <input id="searchArea">
-    <button id="searchBtn">pesquisar</button>
-    <span id="error"></span>
-    <div id="container">
-    </div>
+<body >
+    <main id="main" class="d-flex flex-column align-items-center h-auto main">
+        <h1 class="display-4 title my-5">Book-Finder</h1>
+        <section id="search-section" class="w-100">
+            <div id="search-area" class="search__area d-flex align-items-center w-50 mx-auto pl-4 pr-3">
+                <input id="search-input" type="text" placeholder="Search a book" class="search__input w-100">
+                <button id="remove-btn" class="remove__btn pr-2 align-items-center">
+                    <i class="material-icons remove__icon">close</i>
+                </button>
+                <button id="search-btn" class="search__btn d-flex align-items-center pl-1">
+                    <i class="material-icons search__icon">search</i>
+                </button>
+            </div>
+        </section>
+        <span id="loading" class="loading__icon mt-4"></span>
+        <span id="error" class="mt-5"></span>
+        <ul id="container-list" class="w-100 mt-4 flex-wrap list__container">
+        </ul>
+    </main>
 
-    <script src="/main.js"></script>
+
+    <script type="module" src="/script/main.js"></script>
     </body>
 </html>
