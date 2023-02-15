@@ -21,7 +21,6 @@ function createBookObject(bookInfo) {
         publisher: bookInfo.publisher,
         publishedDate: bookInfo.publishedDate,
         pagesNumber: bookInfo.pageCount,
-        description: bookInfo.description,
         imageLink: bookInfo.imageLinks ? bookInfo.imageLinks.thumbnail : " ",
         previewLink: bookInfo.previewLink,
     }

@@ -1,10 +1,10 @@
 import { containerError, containerList } from "./components-page.js";
 
-export function insertOnPage({title, author, publisher, publishedDate, pagesNumber, description, imageLink, previewLink}) {
+export function insertOnPage({title, author, publisher, publishedDate, pagesNumber, imageLink, previewLink}) {
     const cardBook = document.createElement('li');
     cardBook.classList.add("card");
     cardBook.innerHTML = `
-        <img src="${imageLink}" class="card-img-top mt-5 ml-3" onerror="this.src='/media/error-image';" alt="book image">
+        <img src="${imageLink}" class="card-img-top" onerror="this.src='/media/error-image';" alt="book image">
         <div class="card-body align-self-center">
         <h5 class="card-title">${title}</h5>
         <p class="card-text"><em class="card__text__title">Author:</em> ${author}</p>

@@ -12,6 +12,7 @@
 body {
     background-color: var(--primary-white);
     font-family: "Poppins";
+    overflow-x: hidden;
 }
 
 .main {
@@ -31,4 +32,20 @@ body {
 
 .title::first-letter {
     color: var(--primary-blue);
+}
+
+@media only screen and (max-device-width : 1024px) {
+
+    .main {
+        translate: 0 100px;    
+    }
+
+}
+
+@media only screen and (max-device-width : 480px) {
+
+    .title {
+        font-size: 3em;
+    }
+
 }

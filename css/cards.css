@@ -1,4 +1,6 @@
 .card-img-top {
+    margin-left: 1em;
+    margin-top: 3em;
     border-radius: 10px;
     height: 143px;
     width: 100px;
@@ -49,4 +51,43 @@
 
 .link:focus {
     box-shadow: 0 0 0 0.2rem rgba(73, 175, 208, 0.25);
+}
+
+
+@media only screen and (max-device-width : 1024px) {
+    
+    .card {
+        width: 70%;
+    }
+    
+    .card-img-top {
+        margin-top: 2.5em;
+        height: 171px;
+        width: 120px;
+    }
+
+}
+
+
+@media only screen and (max-device-width : 480px) {
+
+    .card-img-top {
+        margin: 1em auto;
+        height: 143px;
+        width: 100px;
+    }
+
+    .card {
+        flex-direction: column;
+        width: 85%;
+    }
+
+    .card-title {
+        font-size: 1.1em;
+    }
+
+    .card-body {
+        margin-right: auto;
+    }
+
 }

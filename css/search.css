@@ -4,6 +4,8 @@
     border-radius: 24px;
     box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
     height: 3em;
+    width: 50%;
+    min-width: 350px;
     max-width: 600px;
 }
 
@@ -58,4 +60,11 @@
     color: #9aa0a6;
 }
 
+@media only screen and (max-device-width : 480px) {
 
+    .search__area {
+        min-width: 200px;
+        width: 80%;
+    }
+
+}
