@@ -3,7 +3,8 @@ import { catchBookInfos } from "./create-object.js";
 import { errorOnPage } from "./insert-page.js";
 
 export async function search(bookNameForApi){
-    const url = `https://books.googleapis.com/books/v1/volumes?q=${bookNameForApi}&fields=items/volumeInfo(authors,imageLinks,pageCount,publisher,publishedDate,previewLink,title)`;
+    const qtyBook = 10;
+    const url = `https://books.googleapis.com/books/v1/volumes?q=${bookNameForApi}&maxResults=${qtyBook}&fields=items/volumeInfo(authors,imageLinks,pageCount,publisher,publishedDate,previewLink,title)`;
     try {
         const response = await fetch(url);
         if (response.status != 200) throw "was not possible to search";
