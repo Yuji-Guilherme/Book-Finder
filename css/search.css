@@ -17,7 +17,7 @@
     font-size: .85em;
 }
 
-.search__input:focus, .search__btn:focus , .remove__btn:focus {
+.search__input:focus {
     outline: none;
 }
 

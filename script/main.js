@@ -36,6 +36,7 @@ function replaceSpace(name) {
 function clearPage() {
     containerList.innerHTML ="";
     containerError.innerHTML ="";
+    containerError.style.display = "none";
 }
 
 function animateMain() {

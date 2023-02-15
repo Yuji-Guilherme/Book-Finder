@@ -15,17 +15,17 @@
         <h1 class="display-4 title my-5">Book-Finder</h1>
         <section id="search-section" class="w-100">
             <div id="search-area" class="search__area d-flex align-items-center mx-auto pl-4 pr-3">
-                <input id="search-input" type="text" placeholder="Search a book" class="search__input w-100">
-                <button id="remove-btn" class="remove__btn pr-2 align-items-center">
+                <input id="search-input" type="text" placeholder="Search a book" class="search__input w-100" aria-label="enter the name of the book">
+                <button id="remove-btn" class="remove__btn pr-2 align-items-center" data-toggle="tooltip" title="Clear" aria-label="clears the intput">
                     <i class="material-icons remove__icon">close</i>
                 </button>
-                <button id="search-btn" class="search__btn d-flex align-items-center pl-1">
+                <button id="search-btn" class="search__btn d-flex align-items-center pl-1" data-toggle="tooltip" title="Search" aria-label="search the book">
                     <i class="material-icons search__icon">search</i>
                 </button>
             </div>
         </section>
         <span id="loading" class="loading__icon mt-4"></span>
-        <span id="error" class="mt-5"></span>
+        <span id="error" class="mt-5 error" tabindex="0"></span>
         <ul id="container-list" class="w-100 mt-4 flex-wrap list__container">
         </ul>
     </main>
