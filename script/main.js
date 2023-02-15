@@ -1,17 +1,24 @@
-import { input, loadingIcon, containerErro, containerList } from "./components-page.js";
+import { input, loadingIcon, containerError, containerList } from "./components-page.js";
 import { closeRemoveBtn } from "./remove-btn.js";
-import { erroOnPage } from "./insert-page.js";
+import { errorOnPage } from "./insert-page.js";
 import { search } from "./request-api.js";
 
 const btn = document.getElementById("search-btn");
 const mainHtml = document.getElementById("main");
+
+input.addEventListener('keypress', (e) => {
+    if(e.key === "Enter") {
+        e.preventDefault,
+        btn.click();
+    }
+})
 
 btn.addEventListener('click', () => {
     animateMain();
     clearPage();    
     let bookName = input.value;
     if (bookName.trim() === "") {
-        return erroOnPage("search for a book"), 
+        return errorOnPage("search for a book"), 
         input.value="", 
         closeRemoveBtn();
     }
@@ -28,7 +35,7 @@ function replaceSpace(name) {
 
 function clearPage() {
     containerList.innerHTML ="";
-    containerErro.innerHTML ="";
+    containerError.innerHTML ="";
 }
 
 function animateMain() {

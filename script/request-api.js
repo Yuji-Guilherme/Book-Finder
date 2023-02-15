@@ -1,6 +1,6 @@
 import { loadingIcon } from "./components-page.js";
 import { catchBookInfos } from "./create-object.js";
-import { erroOnPage } from "./insert-page.js";
+import { errorOnPage } from "./insert-page.js";
 
 export async function search(bookNameForApi){
     const url = `https://books.googleapis.com/books/v1/volumes?q=${bookNameForApi}&fields=items/volumeInfo(authors,imageLinks,pageCount,publisher,publishedDate,previewLink,title)`;
@@ -12,6 +12,6 @@ export async function search(bookNameForApi){
         catchBookInfos(json.items); 
     } catch(error) {
         loadingIcon.classList.remove("active");
-        erroOnPage(error);
+        errorOnPage(error);
     }
 }

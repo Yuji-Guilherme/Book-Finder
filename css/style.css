@@ -1,7 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url(/css/search.css);
+@import url(/css/cards.css);
+@import url(/css/loading.css);
+
+:root{
+    --primary-blue: #49afd0;
+    --primary-gray: #5e5e5e;
+    --primary-white: #fafafa;
+}
 
 body {
-    background-color: #fafafa;
+    background-color: var(--primary-white);
     font-family: "Poppins";
 }
 
@@ -16,135 +25,10 @@ body {
 }
 
 .title {
-    color: #5e5e5e;
+    color: var(--primary-gray);
     font-weight: 600;
 }
 
 .title::first-letter {
-    color: #49afd0;
-}
-
-.search__area {
-    background-color: #fafafa;
-    border: 1px solid transparent;
-    border-radius: 24px;
-    box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
-    height: 3em;
-    max-width: 600px;
-}
-
-.search__area:hover , .search__area:has(> .search__input:focus) {
-    box-shadow: 0 2px 5px 2px rgb(64 60 67 / 18%);
-}
-
-.search__input, .search__btn, .remove__btn{
-    background-color: transparent;
-    border: none;
-}
-
-.search__input {
-    font-size: .85em;
-}
-
-.search__input:focus, .search__btn:focus , .remove__btn:focus {
-    outline: none;
-}
-
-.search__btn {
-    justify-self: end;
-}
-
-.search__btn:hover {
-    cursor: pointer;
-    font-size: 1.05em;
-    transition: .2s;
-}
-
-.search__icon {
-    color: #5e5e5e;
-    font-size: 1.5em;
-}
-
-.card-img-top {
-    border-radius: 10px;
-    height: 143px;
-    width: 100px;
-}
-
-ul {
-    row-gap: 2em;
-}
-
-li {
-    width: 45%;
-    margin: 0 auto;
-}
-
-.card {
-    border-radius: 20px;
-    flex-direction: row;
-}
-
-.card-title {
-    font-size: 1em;
-    line-height: 1.6em;
-}
-
-.card-text {
-    color: #343a40;
-}
-
-.card-text-title {
-    font-style: normal;
-    color: black;
-}
-
-p {
-    font-size: .8em;
-}
-
-.remove__btn {
-    border-right: solid 1px #d8d8d8;
-    display: none;
-    font-size: .9em;
-}
-
-.remove__btn:hover {
-    cursor: pointer;
-}
-
-.remove__icon {
-    color: #9aa0a6;
-}
-
-.remove__btn.active {
-    display: flex;
-}
-
-.loading__icon {
-    animation: rotate .5s infinite linear;
-    border: solid 3px #9aa0a6;
-    border-top-color: transparent;
-    border-radius: 50%;
-    display: none;
-    height: 30px;
-    width: 30px;
-}
-
-.loading__icon.active {
-    display: block;
-}
-
-@keyframes rotate {
-    to {
-        transform: rotate(1turn);
-    }
-}
-
-.list__container {
-    display: none;
-}
-
-.list__container.loaded {
-    display: flex;
+    color: var(--primary-blue);
 }

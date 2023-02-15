@@ -1,0 +1,52 @@
+.card-img-top {
+    border-radius: 10px;
+    height: 143px;
+    width: 100px;
+}
+
+.card {
+    border-radius: 20px;
+    flex-direction: row;    
+    width: 45%;
+    margin: 0 auto;
+}
+
+.card-title {
+    font-size: 1em;
+    line-height: 1.6em;
+}
+
+.card-text {
+    color: #343a40;    
+    font-size: .8em;
+}
+
+.card__text__title {
+    color: black;
+    font-style: normal;
+}
+
+.list__container {
+    display: none;
+    row-gap: 2em;
+}
+
+.list__container.loaded {
+    display: flex;
+}
+
+.link {
+    border: solid 2px var(--primary-blue);
+    border-radius: 10px;
+    color: var(--primary-blue);
+}
+
+.link:hover {
+    background-color: var(--primary-blue);
+    color: white;
+    transition: .2s;
+}
+
+.link:focus {
+    box-shadow: 0 0 0 0.2rem rgba(73, 175, 208, 0.25);
+}

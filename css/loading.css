@@ -1,0 +1,19 @@
+.loading__icon {
+    animation: rotate .5s infinite linear;
+    border: solid 3px #9aa0a6;
+    border-top-color: transparent;
+    border-radius: 50%;
+    display: none;
+    height: 30px;
+    width: 30px;
+}
+
+.loading__icon.active {
+    display: block;
+}
+
+@keyframes rotate {
+    to {
+        transform: rotate(1turn);
+    }
+}
