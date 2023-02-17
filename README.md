@@ -12,7 +12,7 @@ Ao pesquisar por um livro o site disponibiliza:
     - editora
     - data de publicação  
     - número de páginas
-3. Link para preview.
+3. Link para preview no Google Books.
 
 ## Tecnologias utilizadas
 - ``HTML``
