@@ -20,6 +20,7 @@ btn.addEventListener('click', () => {
     if (bookName.trim() === "") {
         return errorOnPage("search for a book"), 
         input.value="", 
+        input.focus(),
         closeRemoveBtn();
     }
     else {

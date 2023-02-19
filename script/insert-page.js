@@ -11,7 +11,7 @@ export function insertOnPage({title, author, publisher, publishedDate, pagesNumb
         <p class="card-text"><em class="card__text__title">Publisher:</em> ${publisher}</p>
         <p class="card-text"><em class="card__text__title">Published:</em> ${publishedDate}</p>
         <p class="card-text"><em class="card__text__title">Pages:</em> ${pagesNumber}</p>
-        <a href="${previewLink}" class="btn link" aria-label="book preview link" tabindex="0">link</a>
+        <a href="${previewLink}" class="btn link" aria-label="preview link in Google Books" tabindex="0">link</a>
         </div>`;
     containerList.appendChild(cardBook);
 }

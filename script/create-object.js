@@ -24,8 +24,8 @@ function createBookObject(bookInfo) {
         imageLink: bookInfo.imageLinks ? bookInfo.imageLinks.thumbnail : " ",
         previewLink: bookInfo.previewLink,
     }
-    for (let value in bookObject) {
-        if (bookObject[value] === undefined) bookObject[value] = " ";
+    for (let element in bookObject) {
+        if (bookObject[element] === undefined) bookObject[element] = " ";
     }
     return bookObject;
 }
