@@ -10,8 +10,8 @@ export function catchBookInfos(booksAllInfos){
 }
 
 function loaded() {
-    loadingIcon.classList.remove("active");
-    containerList.classList.add("loaded");
+    loadingIcon.removeClass("active");
+    containerList.addClass("loaded");
 }
 
 function createBookObject(bookInfo) {

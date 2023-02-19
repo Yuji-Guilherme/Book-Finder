@@ -1,18 +1,18 @@
 import { input } from "./components-page.js";
-const removeBtn = document.getElementById("remove-btn");
+const removeBtn = $("#remove-btn");
 
-input.addEventListener('input', () => {
-    if (input.value === "") return closeRemoveBtn();
-    else if (removeBtn.classList.contains("active")) return;
-    removeBtn.classList.add("active");
+input.on('input', () => {
+    if (input.val() === "") return closeRemoveBtn();
+    else if (removeBtn.hasClass("active")) return;
+    removeBtn.addClass("active");
 })
 
-removeBtn.addEventListener('click', () => {
-    input.value = "";
+removeBtn.click (() => {
+    input.val("");
     input.focus();
     closeRemoveBtn();
 })
 
 export function closeRemoveBtn() {
-    removeBtn.classList.remove("active");
+    removeBtn.removeClass("active");
 }

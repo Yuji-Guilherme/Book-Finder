@@ -3,23 +3,23 @@ import { closeRemoveBtn } from "./remove-btn.js";
 import { errorOnPage } from "./insert-page.js";
 import { search } from "./request-api.js";
 
-const btn = document.getElementById("search-btn");
-const mainHtml = document.getElementById("main");
+const btn = $("#search-btn");
+const mainHtml = $("#main");
 
-input.addEventListener('keypress', (e) => {
+input.keypress((e) => {
     if(e.key === "Enter") {
         e.preventDefault,
         btn.click();
     }
 })
 
-btn.addEventListener('click', () => {
+btn.click(() => {
     animateMain();
     clearPage();    
-    let bookName = input.value;
+    let bookName = input.val();
     if (bookName.trim() === "") {
         return errorOnPage("search for a book"), 
-        input.value="", 
+        input.val(""), 
         input.focus(),
         closeRemoveBtn();
     }
@@ -35,15 +35,15 @@ function replaceSpace(name) {
 }
 
 function clearPage() {
-    containerList.innerHTML ="";
-    containerError.innerHTML ="";
-    containerError.style.display = "none";
+    containerList.html("");
+    containerError.html("");
+    containerError.hide();
 }
 
 function animateMain() {
-    mainHtml.classList.add("active");
+    mainHtml.addClass("active");
 }
 
 function loadingOn() {
-    loadingIcon.classList.add("active");
+    loadingIcon.addClass("active");
 }

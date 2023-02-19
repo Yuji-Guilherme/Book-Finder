@@ -12,6 +12,7 @@
 body {
     background-color: var(--primary-white);
     font-family: "Poppins";
+    overflow-y: scroll;
     overflow-x: hidden;
 }
 
