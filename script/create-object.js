@@ -22,12 +22,10 @@ function createBookObject(bookInfo) {
         publishedDate: bookInfo.publishedDate,
         pagesNumber: bookInfo.pageCount,
         imageLink: bookInfo.imageLinks ? bookInfo.imageLinks.thumbnail : " ",
-        previewLink: bookInfo.previewLink,
+        previewLink: bookInfo.previewLink
     }
     for (let element in bookObject) {
         if (bookObject[element] === undefined) bookObject[element] = " ";
     }
     return bookObject;
 }
-
-//

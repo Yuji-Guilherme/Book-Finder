@@ -1,4 +1,5 @@
 import { input } from "./components-page.js";
+
 const removeBtn = $("#remove-btn");
 
 input.on('input', () => {
