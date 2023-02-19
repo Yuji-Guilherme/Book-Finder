@@ -1,7 +1,7 @@
-![Funcionamento](https://user-images.githubusercontent.com/102609444/219513026-eee5e677-6aed-46e7-ab3c-8722082d9e0b.gif)
+![funcionamento](https://user-images.githubusercontent.com/102609444/219921867-eec668d9-6bfd-4f3e-b70c-422b89b6ead5.gif)
 
 ## Resumo do projeto
-Aplicativo web que busca um livro utilizando a [Google Books API](https://developers.google.com/books?hl=pt-br). Visando a prática de JavaScript e Bootstrap.
+Aplicativo web que busca um livro utilizando a [Google Books API](https://developers.google.com/books?hl=pt-br). Visando a prática de JavaScript, JQuery e Bootstrap.
 
 ### Funcionamento
 Ao pesquisar por um livro o site disponibiliza: 
@@ -18,6 +18,7 @@ Ao pesquisar por um livro o site disponibiliza:
 - ``HTML``
 - ``CSS``
 - ``JavaScript``
+- ``JQuery``
 - ``Bootstrap``
 
 ## 📘 Número de livros buscados
